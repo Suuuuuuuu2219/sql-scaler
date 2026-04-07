@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pydantic
+sqlparse
+openai
+openenv-core
+requests

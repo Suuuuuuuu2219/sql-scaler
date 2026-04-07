@@ -1,0 +1,10 @@
+apiVersion: v1
+name: sql-scaler
+version: 1.0.0
+description: A standardized SQL optimization environment for AI agents.
+entrypoint: server.app:app
+type: sqlite
+metadata:
+  difficulty_levels: ["easy", "medium", "hard"]
+  tables: ["users", "orders"]
+  reward_range: [0.0, 1.0]
