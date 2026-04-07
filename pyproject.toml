@@ -1,0 +1,16 @@
+[project]
+name = "sql-scaler"
+version = "0.1.0"
+description = "SQL Query Optimizer OpenEnv Environment"
+authors = [{name = "Sutantu2207"}]
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "sqlparse",
+    "openai",
+    "requests"
+]
+
+[tool.openenv]
+entrypoint = "server.app:app"
