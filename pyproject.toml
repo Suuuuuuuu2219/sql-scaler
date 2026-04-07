@@ -4,6 +4,8 @@ version = "0.1.0"
 description = "SQL Query Optimizer OpenEnv Environment"
 authors = [{name = "Sutantu2207"}]
 dependencies = [
+    "openenv-core>=0.2.0",
+    "openenv>=0.2.0",
     "fastapi",
     "uvicorn",
     "pydantic",
@@ -11,6 +13,10 @@ dependencies = [
     "openai",
     "requests"
 ]
+
+[project.scripts]
+server = "server.app:main"
+openenv-server = "server.app:main"
 
 [tool.openenv]
 entrypoint = "server.app:app"
